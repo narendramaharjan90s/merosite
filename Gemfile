@@ -11,6 +11,8 @@ group :producton do
     gem 'pg'
     gem 'rails_12factor'
 end
+# Use font awesome library for icons
+gem 'font-awesome-sass', '4.7.0'
 
 # Use bootstrap library for styles
 gem 'bootstrap-sass', '3.3.1'
