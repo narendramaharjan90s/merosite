@@ -7,8 +7,30 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class='container'>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to root_path, class: 'navbar-brand' do %>
+        <i class="fa fa-users"></i>
+        Mana's Store
+      <% end %>
+    </div>
+    </div>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Contact Us","#" %></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+<div class="container">
+  <%= yield %>
+</div>
 
 </body>
 </html>
